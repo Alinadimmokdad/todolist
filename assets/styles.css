@@ -154,10 +154,10 @@ hr {
   font-weight: bold;
   font-family: "Comfortaa", cursive;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   section,
   .thedonetask {
-    margin: 150px 5px 10px 5px;
+    margin: 50px 5px 10px 5px;
     width: 80vw;
   }
   li {
@@ -177,5 +177,8 @@ hr {
   }
   hr {
     width: 15rem;
+  }
+  body {
+    margin-top: 150px;
   }
 }
