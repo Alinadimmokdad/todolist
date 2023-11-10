@@ -28,8 +28,10 @@ function createListItem(value) {
   const doneContainer = document.getElementById("secondul");
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
+      listItem.classList.add("greenBorder");
       doneContainer.insertBefore(listItem, doneContainer.firstChild);
     } else {
+      listItem.classList.remove("greenBorder");
       container.insertBefore(listItem, container.firstChild);
     }
   });
@@ -76,3 +78,24 @@ function createListItem(value) {
 
   return listItem;
 }
+const searchBar = document.getElementById("search");
+
+searchBar.addEventListener("input", function (event) {
+  const value = event.target.value;
+  const listItems = document.querySelectorAll("li");
+  if (value) {
+    listItems.forEach(function (li) {
+      const paragraph = li.querySelector("p");
+      const text = paragraph.innerText.trim();
+      if (text.includes(value)) {
+        li.style.display = "";
+      } else {
+        li.style.display = "none";
+      }
+    });
+  } else {
+    listItems.forEach(function (li) {
+      li.style.display = "";
+    });
+  }
+});
