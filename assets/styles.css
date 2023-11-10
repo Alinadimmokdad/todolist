@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 10px 10px 50px;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 90vh;
+}
+
+section h2 {
+  color: #ffd700;
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Agbalumo", cursive;
+}
+
+#container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 80vh;
+}
+
+.listitem p {
+  font-family: "Comfortaa", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #030303;
+  flex: 1;
+  word-break: break-word;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline-start: 0px;
+}
+
+/* Style the buttons */
+button {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c9ccc9;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.delete:hover {
+  background-color: tomato;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 4px solid #ffd700;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-family: "Comfortaa", cursive;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border: 2px solid #45a049;
+}
+
+.saveinput {
+  padding: 5px;
+  border: 4px solid #ffd700;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-family: "Comfortaa", cursive;
+}
+
+.thedonetask {
+  background: rgba(255, 255, 255, 0.8);
+  width: 90vh;
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Agbalumo", cursive;
+  color: #58ff5e;
+}
+
+hr {
+  width: 500px;
+  height: 1px;
+  color: rgb(111, 79, 79);
+}
+
+#addbutton {
+  color: #ffd700;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Comfortaa", cursive;
+}
+@media screen and (max-width: 600px) {
+  section,
+  .thedonetask {
+    margin: 150px 5px 10px 5px;
+    width: 80vw;
+  }
+  li {
+    width: 70vw;
+  }
+
+  .listitem p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 14px;
+  }
+  h1,
+  section h2 {
+    font-size: 2rem;
+  }
+  hr {
+    width: 15rem;
+  }
+}
