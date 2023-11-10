@@ -21,9 +21,11 @@ section {
   align-items: center;
   margin: 150px 10px 10px 50px;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
-  width: 90vh;
+  width: 40vw;
+  min-height: 60vh;
 }
 
 section h2 {
@@ -130,7 +132,6 @@ input[type="checkbox"]:checked {
 }
 
 .thedonetask {
-  background: rgba(255, 255, 255, 0.8);
   width: 90vh;
   display: flex;
 }
